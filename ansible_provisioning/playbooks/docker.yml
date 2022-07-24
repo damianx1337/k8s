@@ -1,0 +1,13 @@
+---
+- hosts: kubernetes-single-nodes
+  #remote_user: dadmin
+  #become: true
+  roles:
+    - docker.install
+  become: true
+
+#- hosts: kubernetes-masters
+#  remote_user: dadmin
+#  roles:
+#    - role: dsob.kubernetesMaster
+#      user_name: dadmin
