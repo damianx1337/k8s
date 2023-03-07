@@ -9,7 +9,7 @@ resource "helm_release" "jenkins" {
   repository	= "https://charts.jenkins.io/"
   chart		= "jenkins"
   namespace	= "dev-tools-ns"
-  version	= "4.3.1"
+  version	= "4.3.4"
 
 /*
   values = [
