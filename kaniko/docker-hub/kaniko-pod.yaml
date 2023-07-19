@@ -9,7 +9,8 @@ spec:
     args: ["--dockerfile=Containerfile",
             "--context=git://github.com/path/to/repository.git",
             "--context-sub-path=<directory_containerfile_resides_in>/",
-            "--destination=<docker_hub_reponame>"
+            "--destination=<docker_hub_reponame>",
+            "--custom-platform=linux/amd64"  # accepted values here: https://gist.github.com/asukakenji/f15ba7e588ac42795f421b48b8aede63 (GOOS/GOARCH)
             ] 
     volumeMounts:
     - name: docker-config
